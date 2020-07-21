@@ -106,37 +106,40 @@ Suppose that our database is as follows:
   Check| The time estimate is relatively small
   Action| Next time think about the content first, then estimate the time
 
-2.
-     | | readBarcodesDetailFromDatabase
+
+   | | readBarcodesDetailFromDatabase
   ---|---
   plane | 3min
   do | 3min
   Check| The time estimates are basically consistent
   Action| The simpler the task breakdown, the better the time estimation
 
-3.
-     | | calcuateTheReceiptPrice
+
+   | | calcuateTheReceiptPrice
   ---|---
   plane | 3min
   do | 7min
   Check| Spend time creating objects and valuation
   Action| Mechanical programming also spent time 
 
-     | | calcuateTheTotalPrice
+
+   | | calcuateTheTotalPrice
   ---|---
   plane | 3min
   do | 3min 
   Check| The time estimates are basically consistent
   Action| The simpler the task breakdown, the better the time estimation
 
-       | | generateReceipts
+
+   | | generateReceipts
   ---|---
   plane | 3min
   do | 5min 
   Check| The time estimates are basically consistent
   Action| The simpler the task breakdown, the better the time estimation
 
-       | | formatData
+
+    | | formatData
   ---|---
   plane | 3min
   do | 5min
