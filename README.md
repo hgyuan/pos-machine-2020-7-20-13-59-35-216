@@ -70,3 +70,76 @@ Suppose that our database is as follows:
 2. Please declare all the methods according to your diagram.
 3. Please implement the function according to the context diagram
 4. Please repeat step 3 until all functions are implemented.
+
+# Tasking
+- 统计每个barcode的个数
+    - input: barCodes:[String]
+    - output: cartItems:[{barCodeNumber:String,num:int}]
+- 读取barcode详细信息
+    - input: barCodes:[String]
+    - output: cartItemDetails:[{barcode:String,name:String,price:int}]
+- 计算每个receipt的金额
+    - input: cartItems:[{barCodeNumber:String,num:int}]
+    - cartItemDetails:[{barcode:String,name:String,price:int}]
+    - output: cartItemDetailsWithTotalPrice:[{barcode:String,name:String,quantity:int,unitPrice:int,totalPrice:int}]
+- 计算总金额：
+    - input: cartItemDetailsWithTotalPrice:[{barcode:String,name:String,quantity:int,unitPrice:int,totalPrice:int}]
+    - output: totalPrice:int
+- 生成receipts详细信息：
+    - input: cartItemDetailsWithTotalPrice:[{barcode:String,name:String,quantity:int,unitPrice:int,totalPrice:int}]
+    - output: receiptDetails:[String]
+- 格式化我们的数据:
+    - input: receiptDetails:[string]
+    - totalPrice:int
+    - output: receipt:string
+- 输出数据
+    - input: receipt:string
+    - output: 打印到控制台上
+
+
+!["上下文图"](contextmap.jpg)
+
+   | | countTheBarcode
+  ---|---
+  plane | 3min
+  do | 13min
+  Check| The time estimate is relatively small
+  Action| Next time think about the content first, then estimate the time
+
+
+     | | readBarcodesDetailFromDatabase
+  ---|---
+  plane | 3min
+  do | 3min
+  Check| The time estimates are basically consistent
+  Action| The simpler the task breakdown, the better the time estimation
+
+     | | calcuateTheReceiptPrice
+  ---|---
+  plane | 3min
+  do | 7min
+  Check| Spend time creating objects and valuation
+  Action| Mechanical programming also spent time 
+
+     | | calcuateTheTotalPrice
+  ---|---
+  plane | 3min
+  do | 3min 
+  Check| The time estimates are basically consistent
+  Action| The simpler the task breakdown, the better the time estimation
+
+       | | generateReceipts
+  ---|---
+  plane | 3min
+  do | 5min 
+  Check| The time estimates are basically consistent
+  Action| The simpler the task breakdown, the better the time estimation
+
+       | | formatData
+  ---|---
+  plane | 3min
+  do | 5min
+  Check| Copying the original format took a while
+  Action| maybe should calculation more time
+
+
