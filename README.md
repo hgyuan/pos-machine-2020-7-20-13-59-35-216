@@ -106,7 +106,7 @@ Suppose that our database is as follows:
   Check| The time estimate is relatively small
   Action| Next time think about the content first, then estimate the time
 
-
+2.
      | | readBarcodesDetailFromDatabase
   ---|---
   plane | 3min
@@ -114,6 +114,7 @@ Suppose that our database is as follows:
   Check| The time estimates are basically consistent
   Action| The simpler the task breakdown, the better the time estimation
 
+3.
      | | calcuateTheReceiptPrice
   ---|---
   plane | 3min
