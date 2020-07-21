@@ -101,15 +101,15 @@ Suppose that our database is as follows:
 
    | | countTheBarcode
   ---|---
-  plane | 3min
+  plan | 3min
   do | 13min
-  Check| The time estimate is relatively small
-  Action| Next time think about the content first, then estimate the time
+  Check| 对js有些知识不太了解
+  Action| 针对这部分知识进行了解
 
 
    | | readBarcodesDetailFromDatabase
   ---|---
-  plane | 3min
+  plan | 3min
   do | 3min
   Check| The time estimates are basically consistent
   Action| The simpler the task breakdown, the better the time estimation
@@ -117,31 +117,23 @@ Suppose that our database is as follows:
 
    | | calcuateTheReceiptPrice
   ---|---
-  plane | 3min
+  plan | 3min
   do | 7min
   Check| Spend time creating objects and valuation
   Action| Mechanical programming also spent time 
 
 
-   | | calcuateTheTotalPrice
-  ---|---
-  plane | 3min
-  do | 3min 
-  Check| The time estimates are basically consistent
-  Action| The simpler the task breakdown, the better the time estimation
-
-
    | | generateReceipts
   ---|---
-  plane | 3min
+  plan | 3min
   do | 5min 
-  Check| The time estimates are basically consistent
-  Action| The simpler the task breakdown, the better the time estimation
+  Check| 使用到了一种之前没有接触到的方法
+  Action| 多加练习，在后面更快的使用
 
 
-    | | formatData
+   | | formatData
   ---|---
-  plane | 3min
+  plan | 3min
   do | 5min
   Check| Copying the original format took a while
   Action| maybe should calculation more time
